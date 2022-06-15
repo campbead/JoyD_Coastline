@@ -6,7 +6,7 @@ library(mapproj)
 offset =20
 my_scale = 15
 
-DCC_transects <- read.csv(file="DCC_JOYD.csv",
+DCC_transects <- read.csv(file="data/DCC_JOYD.csv",
                           header=TRUE, sep=",")
 
 DCC_transects$rast_rec <- DCC_transects$rast_rec + offset
