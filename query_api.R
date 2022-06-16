@@ -12,3 +12,5 @@ r <- GET("https://data.linz.govt.nz/services/query/v1/raster.json",
 
 # see response text
 content(r,"text")
+
+foo <- content(r, as="parsed", type= "application/json")
